@@ -6,11 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Justificantes</h1>
-    <h3>Ingresa tu numero de control</h3>
-    <form action="datos.php" method="post" >    
-    <input type="number" placeholder="No.control" name="id">
-    <input type="submit">
+    <h1 name="Titulo">Justificantes</h1>
+    <h3 name="instru">Ingresa tu numero de control</h3>
+    <form action="datos.php" method="get" name="Formcont" >    
+    <input type="number" placeholder="No.control" name="Nocont">
+    <input type="submit" value="Buscar" name="Buscador">
+    <a href="Registro.php">Registros</a>
     </form>
 </body>
 </html>
