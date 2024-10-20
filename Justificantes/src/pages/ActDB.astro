@@ -1,0 +1,37 @@
+---
+import Menu from '../components/menu.jsx';
+import Encabezado from '../components/encabezado.jsx';
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Actualizar Alumnos</title>
+    </head>
+    <body>
+        <Encabezado></Encabezado>
+        <Menu></Menu>
+        <section>
+            <form action="">
+                <fieldset>
+                    <legend>Actualizar la Base de Datos</legend>
+                    <h4>Subir archivo Excel</h4>
+                    <input type="file" name="" id="">
+                    <button>Agregar grupo</button>
+                </fieldset>
+            </form>
+
+            <form action="">
+                <fieldset>
+                    <legend>Grupos Ciclo Escolar 2024-2025</legend>
+                    <label>
+                        5°E 
+                        <button type="button">Eliminar</button>
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>

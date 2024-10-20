@@ -1,0 +1,26 @@
+---
+import Menu from '../components/menu.jsx';
+import Encabezado from '../components/encabezado.jsx';
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Movimientos Administrativos</title>
+    </head>
+    <body>
+        <Encabezado></Encabezado>
+        <Menu></Menu>
+        <!-- Esto solo es un ejemplo de como se deberia ver -->
+        <section>
+            <fieldset>
+                <legend>Últimos Movimientos</legend>
+                <label>Gael Apanco López 20/10/2024 <strong>Razón:</strong>Enfermedad</label>
+                <button>Borrar</button>
+                <button>Editar</button>
+            </fieldset>
+        </section>
+    </body>
+</html>

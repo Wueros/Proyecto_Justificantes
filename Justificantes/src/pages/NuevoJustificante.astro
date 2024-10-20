@@ -1,0 +1,31 @@
+---
+import Menu from '../components/menu.jsx';
+import Encabezado from '../components/encabezado.jsx';
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Nuevo Justificante</title>
+    </head>
+    <body>
+        <Encabezado></Encabezado>
+        <Menu></Menu>
+        <form action="">
+            <fieldset>
+                <legend>
+                    <header>
+                        <h2>Solicitud de Justificantes</h2>
+                    </header>
+                </legend>
+                <label style="padding:5px">
+                    <strong style="display: block; padding:10px">Ingresa el Número de Control:</strong>
+                    <input type="number">
+                </label>
+                <button>Buscar Alumno</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

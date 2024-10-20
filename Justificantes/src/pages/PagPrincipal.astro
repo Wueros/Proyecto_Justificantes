@@ -1,0 +1,61 @@
+---
+import Menu from '../components/menu.jsx';
+import Encabezado from '../components/encabezado.jsx';
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content={Astro.generator}/>
+        <title>Documentación del Programa</title>
+    </head>
+    <body>
+        <Encabezado></Encabezado>
+        <Menu></Menu>
+        <section>
+            <article>
+                <header>
+                    <h2>Documentación del Programa.</h2>
+                </header>
+                <ul>
+                    <li><a href="#NuevoJusti">Nuevo Justificante</a></li>
+                    <li><a href="#Historial">Historial de Justificantes</a></li>
+                    <li><a href="#Estadisticas">Estadisticas</a></li>
+                    <li><a href="#MovAdmin">Movimientos Administrativos</a></li>
+                    <li><a href="#ActDB">Actualizar Bases de Datos</a></li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="NuevoJusti">
+            <aside>
+                <h3>Nuevo Justificante</h3>
+            </aside>
+        </section>
+
+        <section id="Historial">
+            <aside>
+                <h3>Historial de Justificantes</h3>
+            </aside>
+        </section>
+        
+        <section id="Estadisticas">
+            <aside>
+                <h3>Estadisticas</h3>
+            </aside>
+        </section>
+        
+        <section id="MovAdmin">
+            <aside>
+                <h3>Movimientos Administrativos</h3>
+            </aside>
+        </section>
+
+        <section id="ActDB">
+            <aside>
+                <h3>Actualizar Bases de Datos</h3>
+            </aside>
+        </section>
+    </body>
+</html>

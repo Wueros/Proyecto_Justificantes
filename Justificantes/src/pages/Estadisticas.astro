@@ -1,0 +1,34 @@
+---
+import Menu from '../components/menu.jsx';
+import Encabezado from '../components/encabezado.jsx';
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Mostrar Estadisticas de los Alumnos</title>
+    </head>
+    <body>
+        <Encabezado></Encabezado>
+        <Menu></Menu>
+        <!--Ejemplo de Estructura -->
+        <form action="">
+            <label for="">
+                Seleccionar Mes:
+                <select name="" id="">
+                    <option value="">Enero</option>
+                </select>
+                <button>Mostrar</button>
+            </label>
+
+            <section>
+                <fieldset>
+                    <legend>Estadisticas del Mes de Octubre</legend>
+                </fieldset>
+            </section>
+        </form>
+
+    </body>
+</html>

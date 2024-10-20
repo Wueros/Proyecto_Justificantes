@@ -1,0 +1,43 @@
+---
+/* Variables y datos que se pueden usar en la página */
+
+const nombre_sitio = "Proceso de Solicitud de Justificante"
+const usuario = "Nombre de Usuario";
+const contrasena = "Contraseña";
+import Encabezado from '../components/encabezado.jsx';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Aquí va referenciado el Tailwind hasta que lo aprenda a usar a la verga <link rel="stylesheet" href="/src/styles/styles.css">-->
+    <title>{nombre_sitio}</title>
+  </head>
+  <body>
+    <Encabezado></Encabezado>
+    <header>
+      <h1>¡Bienvenido al {nombre_sitio} del CBTIS 86!</h1>
+    </header>
+    <form action="">
+      <fieldset>
+        <legend>Ingresa el <strong>{usuario}</strong> y 
+          <strong>{contrasena}</strong> de tu perfil como 
+          <strong>Orientador Educativo</strong> 
+        </legend>
+        
+        <label style="display: block; padding:10px;">
+          {usuario}:
+          <input type="text" class="">
+        </label>
+        
+        <label style="display: block; padding:10px;">
+          {contrasena}
+          <input type="password" name="" id="">
+        </label>
+
+        <a href="/PagPrincipal" target="_blank">Siguiente Página</a>
+      </fieldset>
+    </form>
+  </body>
+</html>
